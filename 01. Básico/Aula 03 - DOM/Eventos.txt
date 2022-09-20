@@ -1,0 +1,99 @@
+Eventos:
+
+Só com movimentos do mouse: 
+mouseenter: Quando mouse chega dentro da div, dispara evento
+mousemove: Continua movendo o mouse dentro da div
+mousedown: Quando pressiona o botão do mouse 
+mouseup: Quando solta o botão do mouse
+click: Apertar e soltar imediatamente
+mouseout: Move pra fora da fora da div o mouse
+
+
+Funções:
+
+function ação(parametro) {
+}
+
+
+
+
+Exemplos:
+
+<body>
+    <div id = "area"> 
+        Interaja...
+    </div>
+    
+    <script src="script2.js"></script>
+</body>
+
+JavaScript: 
+
+let areaa = window.document.querySelector('div#area')
+
+//Eventos
+areaa.addEventListener ('click', clicar)
+areaa.addEventListener ('mouseenter', entrar)
+areaa.addEventListener ('mouseout', sair)
+
+function clicar()  {
+    areaa.innerHTML = `Clicou!`
+    areaa.style.background = 'black'
+}
+
+function entrar() {
+    areaa.innerHTML = `Entrou!`
+    areaa.style.background = 'green'
+}
+
+function sair() {
+    areaa.innerHTML = `Saiu!`
+    areaa.style.background = 'red'
+}
+
+
+----------------------------------//----------------------------------
+
+HTML: <body>
+
+    <h1>Somando valores</h1>
+    <input type = "number" name = "txtn1" id = "txtn1"> +
+    <input type = "number" name = "txtn2" id = "txtn2">
+    <input type = "button" value = "somar" onclick = "somar()">
+
+    <div id = "res">
+        Resultado
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+
+
+CSS:
+body {
+    font: normal 14pt Arial;
+}
+
+input {
+    font: normal 14pt Arial;
+    width: 100px;
+}
+
+div#res {
+    margin-top: 20px;
+}
+
+
+JavaScript: 
+
+function  somar() {
+    let tn1 = window.document.querySelector ('input#txtn1')
+    let tn2 = window.document.querySelector ('input#txtn2')
+    let res = window.document.querySelector ('div#res')
+
+    let numero1 = Number(tn1.value) // Converter número
+    let numero2 = Number(tn2.value) // Converter número
+    let soma = numero1 + numero2
+
+    res.innerHTML = `O Resultado de ${numero1} + ${numero2} = ${soma}`
+}

@@ -1,0 +1,5 @@
+1- Entre com o seu time de coração e exiba o nome dele, tanto em maiusculo quanto em minusculo
+2- Coloque seu ano de nascimento e calcule a idade
+3- Coloque quanto você tem em reais e mostre a conversão em dólar
+4- Coloque as interações do mouse
+5- Faça o calculo da média e mostre se ele foi aprovado ou não (com botões)

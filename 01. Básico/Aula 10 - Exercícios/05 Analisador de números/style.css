@@ -1,0 +1,35 @@
+body {
+    background-color: lightblue;
+    text-align: center;
+}
+
+header {
+    
+}
+
+section {
+    background-color: white;
+    text-align: left;
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 3px 3px 10px gray;
+    border-radius: 10px;
+}
+
+div#formulario {
+    padding: 10px;
+}
+
+div#sessao {
+    padding: 10px;
+}
+
+input#botao {
+    margin-left: 10px;
+}
+
+footer {
+    font-style: italic;
+    padding: 10px;
+}

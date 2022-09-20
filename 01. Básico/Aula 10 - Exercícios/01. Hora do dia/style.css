@@ -1,0 +1,26 @@
+body {
+    background-color: lightblue;
+    text-align: center;
+}
+
+header {
+
+}
+
+section {
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 10px gray;
+}
+
+img#foto {
+    padding: 10px;
+}
+
+footer {
+    font-style: italic;
+    padding: 10px;
+}

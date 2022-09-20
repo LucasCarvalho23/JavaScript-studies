@@ -1,0 +1,14 @@
+let contador = 1
+
+/*
+while (contador <= 6) {
+    console.log(`Vasco ${contador}`)
+    contador++
+}
+
+*/
+
+do {
+    console.log (`Vasco da Gama ${contador}`)
+    contador++
+} while (contador <= 6)

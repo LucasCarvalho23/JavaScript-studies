@@ -1,0 +1,25 @@
+/* Corpo */
+body {
+    background-color: lightblue;
+}
+
+/* Parágrafo */
+p {
+    font-weight: bold;
+
+}
+
+/* Botão que está no parágrafo */
+p#botoes {
+    text-align: center;
+}
+
+/* Resultado final */
+div#resultado1 {
+    margin-top: 40px;
+    background-color: white;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px;
+}

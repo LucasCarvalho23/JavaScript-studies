@@ -1,0 +1,159 @@
+alert("Vasco da Gama")  // Alerta
+window.confirm('Seu time é Vasco?') // Confirmação
+window.prompt('Qual seu jogador favorito?') // Entrada de valor
+
+let numero1 = Number(window.prompt('Digite um número')); // Conversão
+
+document.write (`A soma entre ${numero1} e ${numero2} é igual a ${soma}`); // Exibição
+
+soma.lenght = Quantos caracteres tem
+soma.toUpperCase() = Coloca para letras maiúsculas
+soma.toLowerCase() = Coloca para letras minúsculas
+
+let numero1.toFixed(2) // Deixar com 2 causas decimais
+
+numero1.toFixed(2).replace('.',',') // Substituir ponto por vírgula
+
+numero1.toLocalString('pt-BR', {style: 'currency', currency: 'BRL'}) // Conveter para real
+
+
+
+Operadores:
+- Aritiméticos: +, -, *, /, % e ** (** , * /  %, + -)
+
+- Atribuição: ++ (+1) e -- (-1)
+
+- Relacionais: >, < >=, <=, == e != (true ou false)  // === identidade restrita, ou seja, para o Javascript 5 == '5' é true, mesmo sendo de tipos diferentes, porém 5 === '5' é false. Igual != e !==.
+
+- Lógicos: ! (negação), && (e ou conjunção) e || (ou ou disjunção)
+! true = false / ! false = true;
+&& true true = true / && true false = false / && false true = false / && false false = false;
+|| true true = true / || true false = true / || false true = true / || false false = false.
+
+- Ternários: ? e :
+test ? true:false
+ex.: media >= 7.0 ? "Aprovado" : "Reprovado"
+
+
+Precedência:
+(), **, / *  %, + -
+> < >= <= == !=
+! 
+&&
+||
+
+Ex.: 
+let num = 8
+let res = num % 2 == 0 ? 5 : 9
+res = 5
+
+let idade = 19
+let res = idade > 18 ? 'maior' : 'menor'
+res = maior
+
+
+
+/////////////////////////////////////////////////////////////////////
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+</body>
+</html>
+
+
+/////////////////////////////////////////////////////////////////////
+
+Links externos:
+<link rel="stylesheet" href="style.css"> // CSS
+<script src="script.js"></script> // JavaScript
+
+
+window.document.write (window.document.charset) - Mostra a configuração
+window.document.write (window.navigator.appName) - Mostra o navegador
+window.document.write (window.document.URL) - Mostra a URL
+
+
+
+Selecionando: Marca, ID, Nome (por nome do ID ou da classe), Classe (em vez do ID é class) e Seletor
+
+Marca (tags, ex.: p, h1): getElementByTagname()
+
+Ex.: 
+<body>
+    
+    <h1>Iniciando estudos com DOM</h1>
+
+    <p>Aqui vai o resultado</p>
+
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+
+    <div>Clique em mim</div>
+
+    <script>
+	let paragrafo = window.document.getElementsByTagName('p')[0]*
+	let corpo = window.document.body
+
+	window.document.write(`Está escrito assim: ` + paragrafo.innerHTML)
+	alert (paragrafo.innerHTML) // Mostra alerta
+
+	paragrafo.style.color = 'yellow' // Muda a cor do parágrafo
+	corpo.style.background = 'black' // Muda background
+    </script>
+
+</body>
+
+* Parágrafo 0
+** innerText - Copia sem formatação. innerHTML - Copia com formatação
+
+
+
+ID:
+
+<body>
+    
+    <h1>Iniciando estudos com DOM</h1>
+
+    <p>Aqui vai o resultado</p>
+
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+
+    <div id = "mensagem">Clique em mim</div>
+
+    <script>
+	let d = window.document.getElementByID ('mensagem') // recebe o ID
+	d.style.background = 'green' // Fundo da div
+	d.innetText = 'Estou aguardando' // muda o texto da div
+    </script>
+
+
+Selector:
+
+<body>
+    
+    <h1>Iniciando estudos com DOM</h1>
+
+    <p>Aqui vai o resultado</p>
+
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+
+    <div>Clique em mim</div>
+
+    <script>
+	let paragrafo = window.document.getElementsByTagName('p')[0]*
+	let corpo = window.document.body
+	let d = window.document.querySelector('div#mensagem') *
+
+	d.style.background = 'blue'
+    </script>
+
+</body>
+
+* # porque é ID, se fosse class seria '.'.

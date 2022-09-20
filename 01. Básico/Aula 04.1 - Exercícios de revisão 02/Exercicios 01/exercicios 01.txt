@@ -1,0 +1,5 @@
+1- Entre com uma moeda e converta para dolar
+2- Entre com duas notas e mostre se está aprovado ou não
+3- Entre com a idade e mostre se ele pode votar
+4- Entre com a velocidade e mostre se ele recebe multa
+5- Interaja o mouse

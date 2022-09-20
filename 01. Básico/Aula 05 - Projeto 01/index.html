@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto Gama</title>
+</head>
+<body>
+    <h1>Formulário de cadastro</h1>
+
+    <!-- Nome completo -->
+    <p>
+        Nome completo: <input type = "text" name = "nome" id = "nome">
+        <input type = "button" value = "Verificar" onclick = "verificar()">
+    </p>
+
+    <!-- Ano se pode voltar ou não -->
+
+    <p>
+        Ano de nascimento: <input type = "number" name = "ano" id = "ano">
+        <input type = "button" value = "Eleitor?" onclick = "eleitor()">
+    </p>
+
+    <!-- Nota na prova -->
+
+    <p>
+        Qual suas nota na prova?  <input type = "number" name = "nota1" id = "nota1">
+        <input type = "number" name = "nota2" id = "nota2">
+        <input type = "button" value = "Calcular" onclick = "calcular()">
+    </p>
+
+
+    <!-- Velocidade em Km/h -->
+
+    <p>
+        Qual velocidade você estava? <input type = "number" name = "velocidade" id = "velocidade"> Km/h
+        <input type = "button" value = "Multa?" onclick = "multa()">
+    </p>
+
+    <!-- Calculo de real -->
+
+    <p>
+        Quanto você tem em reais? <input type = "number" name = "dinheiro" id = "dinheiro">
+        <input type = "button" value = "Converter" onclick = "converter()">
+    </p>
+
+    <!-- Que horas são? E que dia é hoje?-->
+
+    <p id = "botoes">
+        <input type = "button" value = "Horas" onclick = "hora()">
+        <input type = "button" value = "Dia" onclick = "dia()">
+    </p>
+
+
+
+    <!--
+    <p>
+        <input type = "button" value = "Configurações" onclick = "configuracoes()">
+    </p>
+    -->
+
+
+    <div id = "resultado1">
+        INFO
+    </div>
+
+    <script src = "script.js"></script>
+</body>
+</html>
