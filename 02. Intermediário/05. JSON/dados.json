@@ -1,0 +1,11 @@
+{
+    "string": "Lucas",
+    "numero": 23,
+    "boolean": true,
+    "array": ["Ferrarri", "McLaren", "Mercedes", "RedBull"],
+    "object": {
+        "time": "vasco",
+        "país": "brasil"
+    },
+    "null": null
+}

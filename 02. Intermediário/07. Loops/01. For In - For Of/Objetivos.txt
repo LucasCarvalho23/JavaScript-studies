@@ -1,0 +1,2 @@
+For In = Percorre os atributos de um objeto
+For Of = Percorre arrays
