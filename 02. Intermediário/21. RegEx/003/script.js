@@ -1,20 +1,20 @@
-class ReplaceDate {
+(function() {
 
-    constructor() {
-        this.str = 'Today is 2022/09/03 and tomorrow will be 2022/09/24. My birthday is 07/03.'
-        this.months = ['jan','feb','mar','apr','may','jun','jul','ago','sep','oct','nov','dec']
+    let str = 'Today is 26/09/2022 and tomorrow will be 27/09/22. My birthday is 3/07.'
+    let months = ['jan','feb','mar','apr','may','jun','jul','ago','sep','oct','nov','dec']
 
-        console.log(this.str)
-    }
-
-}
-
-let replacedate = new ReplaceDate()
-
-/*
-    function formtdata(str) {
+    function formatdata(str) {
+        
         let day = ''
-        let regex = //
-        str.replace(regex,func())
+        let regex = /(\d{1,2})\/(\d{1,2})(?:\/(\d{2,4}))?/g
+        return str = str.replace(regex, function(a, b, c, d, e, f){
+            day = b + ' de ' + months[parseInt(c)-1]
+            day += (d) ? ' de ' + d : ''
+            return day
+        })
     }
-*/
+
+    str = formatdata(str)
+    console.log (str)
+
+})()
