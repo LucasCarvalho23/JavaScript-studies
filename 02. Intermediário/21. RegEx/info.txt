@@ -1,0 +1,15 @@
+^ () $ : 
+	^ = Abre
+	() = Expressões aqui dentro
+	$ = Fecha
+
+
+Exemplo: 
+^ ( \([0-9]{2}\) | [0-9]{2} ) $
+
+| - Ou
+\( , \) - Serão usados parênteses
+[0-9] - Números de 0 a 9
+{2} - 2 caracteres
+
+Resumo do pedido: ([0-9]{2}) ou [0-9]{2}
