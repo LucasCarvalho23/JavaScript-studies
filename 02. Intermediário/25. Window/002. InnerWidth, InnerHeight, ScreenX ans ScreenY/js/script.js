@@ -5,8 +5,8 @@
     OuterWidth: Return the out size the window
     OuterHeight: Return the out size the window
 
-    ScreenX: 
-    ScreenY: 
+    ScreenX: Inform the horizontal position
+    ScreenY: Inform the vertical position
 
 */
 
